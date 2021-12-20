@@ -1,8 +1,14 @@
-import React, { ReactElement } from 'react';
-import './App.css';
+import React, { FC, ReactElement } from 'react';
 
-export const App = React.memo((): null | ReactElement => (
+import './App.css';
+import { HashRouter } from 'react-router-dom';
+
+import { RoutesPage } from './c2-routes/Routes';
+
+export const App: FC = (): null | ReactElement => (
   <div className="App">
-    <div>Hello</div>
+    <HashRouter>
+      <RoutesPage />
+    </HashRouter>
   </div>
-));
+);
