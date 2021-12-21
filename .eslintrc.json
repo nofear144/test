@@ -23,7 +23,10 @@
     "react-hooks",
     "@typescript-eslint"
   ],
+
   "rules": {
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
     "no-shadow": "off",
     "no-alert": "error",
     "no-plusplus": "error",
@@ -36,6 +39,7 @@
         "max": 1
       }
     ],
+
     "@typescript-eslint/no-shadow": [
       "error"
     ],
@@ -55,7 +59,6 @@
     "prettier/prettier": "error",
     "react/prop-types": 0,
     "react/display-name": "off",
-    "react/react-in-jsx-scope": "off",
     "react/destructuring-assignment": "error",
     "react/jsx-filename-extension": [
       1,
@@ -111,7 +114,8 @@
       }
     ]
   },
-  "settings": {
+  "settings":
+  {
     "import/resolver": {
       "node": {
         "paths": [

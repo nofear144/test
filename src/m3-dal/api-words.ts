@@ -15,11 +15,11 @@ export const wordsAPI = {
 export type WordResponseType = {
   word: string;
   phonetic: string;
-  phonetics: PhoneticType;
+  phonetics: PhoneticType[];
   origin?: string;
   meanings: MeaningType[];
 };
-type PhoneticType = [{ text: string; audio: string }, { text: string }];
+type PhoneticType = { text: string; audio: string };
 type MeaningType = {
   partOfSpeech: string;
   definitions: DefinitionType[];
@@ -27,6 +27,6 @@ type MeaningType = {
 type DefinitionType = {
   definition: string;
   example: string;
-  synonyms: [];
-  antonyms: [];
+  synonyms: string[] | [];
+  antonyms: string[] | [];
 };

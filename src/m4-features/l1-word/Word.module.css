@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    padding: 25px;
+    flex-direction: column;
+}
+
+.mainContainer {
+    background-color: #f6f6f6;
+    box-shadow: 15px 11px 13px -4px rgba(34, 60, 80, 0.17);
+    margin: 40px auto;
+    width: 1000px;
+    border-radius: 8px;
+}
+
+.synonyms {
+
+}

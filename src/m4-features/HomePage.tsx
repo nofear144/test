@@ -6,6 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import { setErrorAC } from '../m2-bll/n1-reducers/word-reducer';
 import { useAppSelector } from '../m2-bll/n2-store/store';
 
+import s from './Homepage.module.css';
+
 export const HomePage: FC = (): null | ReactElement => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -22,11 +24,15 @@ export const HomePage: FC = (): null | ReactElement => {
   };
 
   const routeToResult = (): void => {
+    if (word.length === 0) {
+      return;
+    }
     navigate(`/result/${word}`);
   };
+
   return (
     <div>
-      <div>
+      <div className={s.container}>
         <input onChange={changeWordValue} value={word} />
         <button type="button" onClick={routeToResult}>
           Request
