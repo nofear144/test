@@ -1,0 +1,25 @@
+.container {
+
+}
+
+.content {
+    display: flex;
+    max-width: 350px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.inputStyle {
+    margin: 10px 0;
+    padding: 6px 12px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: rgba(7, 7, 7, 0.93);
+    border: 1px solid rgba(169, 169, 169, 0.4);
+    border-radius: 5px;
+    max-width: 250px;
+    width: 100%;
+}

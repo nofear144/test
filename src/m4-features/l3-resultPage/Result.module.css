@@ -1,0 +1,17 @@
+.back {
+
+    padding: 10px 20px;
+    border-color: transparent;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Sintony', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    transition: all 0.3s;
+    border-radius: 5px;
+    color: white;
+    background-color: #2d4052;
+    margin-top: 15px;
+    width: 150px;
+
+}

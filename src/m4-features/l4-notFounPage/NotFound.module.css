@@ -1,19 +1,13 @@
 .container {
+    height: 400px;
     display: flex;
-    padding: 25px;
     flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
 }
 
-.mainContainer {
-    background-color: #f6f6f6;
-    box-shadow: 15px 11px 13px -4px rgba(34, 60, 80, 0.17);
-    margin: 40px auto;
-    max-width: 1000px;
-    border-radius: 8px;
-}
-
-.butPos {
-    display: flex;
+.wordNotFound {
+    color: #f2655a;
 }
 
 .back {
@@ -27,17 +21,13 @@
     transition: all 0.3s;
     border-radius: 5px;
     color: white;
-    background-color: #0755af;
+    background-color: #2d4052;
     margin-top: 15px;
     width: 150px;
 }
 
-@media all and (max-width: 360px) {
-    .butPos {
-        justify-content: center;
-    }
-}
-
-.synonyms {
-
+.positBtn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
